@@ -5,5 +5,7 @@ urlpatterns = [
     path('index/', views.indexpage, name="indexpage"),
     path('stud_profile/',views.stud_profile,name="stud_profile"),
     path('stud_edit/',views.stud_edit,name="stud_edit"),
+    path('stud_save/',views.stud_save,name="stud_save"),
+
 
 ]
