@@ -8,7 +8,9 @@ urlpatterns = [
     path('stud_save/',views.stud_save,name="stud_save"),
     path('stud_notification/',views.stud_notification,name="stud_notification"),
     path('stud_user/',views.stud_user,name="stud_user"),
-    path('stud_login/',views.stud_login,name="stud_login")
+    path('stud_login/',views.stud_login,name="stud_login"),
+    path('stud_save/',views.stud_save,name="stud_save"),
+    path('stud_logout/',views.stud_logout,name="stud_logout")
 
 
 ]

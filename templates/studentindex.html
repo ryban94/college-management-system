@@ -41,11 +41,11 @@
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="{% static 'assets/images/faces/face15.jpg' %}" alt="">
+                  <img class="img-xs rounded-circle " src="{{name.Image.url}}" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <h5 class="mb-0 font-weight-normal">{{name.FirstName}}</h5>
                   <span>Gold Member</span>
                 </div>
               </div>
@@ -287,8 +287,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
-                    <img class="img-xs rounded-circle" src="{% static 'assets/images/faces/face15.jpg' %}" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                    <img class="img-xs rounded-circle" src="{{name.Image.url}}" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">{{name.FirstName}}</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
@@ -306,7 +306,7 @@
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item" href="{% url 'stud_logout' %}">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
@@ -657,8 +657,8 @@
                               </div>
                             </td>
                             <td>
-                              <img src="{% static 'assets/images/faces/face1.jpg' %}" alt="image" />
-                              <span class="pl-2">Henry Klein</span>
+                              <img src="{{name.Image.url}}" alt="image" />
+                              <span class="pl-2">{{name.FirstName}}</span>
                             </td>
                             <td> 02312 </td>
                             <td> $14,500 </td>
